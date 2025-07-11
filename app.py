@@ -1,11 +1,11 @@
 import streamlit as st
-import numpy as np
-import pickle
 import joblib
+import numpy as np
+import pandas as pd
 
 
 # Load the model
-model = joblib.load("random_forest_tuned_maize_model.pkl")
+model = joblib.load("random_forest_tuned_maize_model 2.pkl")
 
 st.set_page_config(page_title="Maize Yield Predictor", layout="centered")
 
