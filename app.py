@@ -6,9 +6,11 @@ import pandas as pd
 with open("random_forest_maize_model.pkl", "rb") as f:
     model = cloudpickle.load(f)
 
-st.set_page_config(page_title="Maize Yield Predictor", layout="centered")
+st.set_page_config(page_title="RandomFoLXBoost", layout="centered")
 
-st.title("🌽 Maize Yield Prediction App")
+st.title("🌽RandomFoLXBoost ")
+st.subheader("Maize Yield Prediction App")
+st.write("Input your farm parameters to predict maize yield.")
 
 # Inputs
 soil_type = st.selectbox("Soil Type", ["Clayey", "Loamy", "Sandy", "Silty"])
