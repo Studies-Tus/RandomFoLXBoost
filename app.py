@@ -11,9 +11,9 @@ st.set_page_config(page_title="Maize Yield Predictor", layout="centered")
 st.title("🌽 Maize Yield Prediction App")
 
 # Inputs
-soil_type = st.selectbox("Soil Type", ["Loamy", "Sandy", "Silty"])
+soil_type = st.selectbox("Soil Type", ["Clayey", "Loamy", "Sandy", "Silty"])
 irrigation = st.selectbox("Irrigation Method", ["Flood", "Manual", "Sprinkler", "Drip"])
-region = st.selectbox("Region", ["North", "South", "East", "West"])
+region = st.selectbox("Region", ["North East", "North West", "North Central", "South East", "South West", "South South"])
 
 rainfall = st.number_input("Rainfall (mm)", min_value=0.0)
 temperature = st.number_input("Temperature (°C)", min_value=0.0)
