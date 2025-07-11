@@ -1,12 +1,7 @@
-import joblib
-import pandas as pd
+import streamlit as st
 import numpy as np
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.linear_model import LinearRegression
-from xgboost import XGBRegressor
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+import pickle
+import joblib
 
 
 # Load the model
