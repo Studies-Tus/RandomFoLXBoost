@@ -3,7 +3,7 @@ import cloudpickle
 import pandas as pd
 
 # Load the saved model
-with open("RFmaize_model(1).pkl", "rb") as f:
+with open("RFmaize_model.pkl", "rb") as f:
     model = cloudpickle.load(f)
 
 st.set_page_config(page_title="Maize Yield Predictor", layout="centered")
