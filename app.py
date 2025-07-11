@@ -4,9 +4,8 @@ import pandas as pd
 import cloudpickle
 
 
-# Load model with cloudpickle
-with open("random_forest_tuned_maize_model 3.pkl", "rb") as f:
-    model = cloudpickle.load(f)
+with open("random_forest_maize_model.pkl", "wb") as f:
+    cloudpickle.dump(grid_search.best_estimator_, f)
 
 
 st.set_page_config(page_title="Maize Yield Predictor", layout="centered")
