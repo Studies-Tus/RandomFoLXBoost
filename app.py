@@ -1,7 +1,13 @@
-import streamlit as st
 import joblib
-import numpy as np
 import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import LinearRegression
+from xgboost import XGBRegressor
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+
 
 # Load the model
 model = joblib.load("random_forest_tuned_maize_model.pkl")
