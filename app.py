@@ -35,4 +35,4 @@ if st.button("Predict"):
         'Planting_Density (plants/m²)': [density]
     })
     prediction = model.predict(input_df)[0]
-    st.success(f"Predicted Maize Yield: {prediction:.2f} t/ha")
+    st.success(f"Predicted Maize Yield: {prediction:.2f} tons/ha based on the prevailing conditions")
