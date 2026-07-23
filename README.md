@@ -1,4 +1,4 @@
-# 🌽 Maize Yield Prediction App
+Maize Yield Prediction App
 
 This project uses a machine learning model (Random Forest) to predict maize yield (in tons per hectare) based on key environmental and farming inputs.
 
@@ -6,13 +6,13 @@ Built with **Streamlit**, this app allows users such as farmers, agronomists, an
 
 ---
 
-## 🚀 Live Demo
+Live Demo
 
-👉 [Click here to try the app](#) *(Add your Streamlit Cloud URL here once deployed)*
+
 
 ---
 
-## 💡 Features
+Features
 
 - Predict maize yield using:
   - Soil Type
@@ -28,13 +28,4 @@ Built with **Streamlit**, this app allows users such as farmers, agronomists, an
 
 ---
 
-## 🧠 Model Info
 
-The model was trained on a Nigerian maize dataset and fine-tuned using `GridSearchCV` with 5-fold cross-validation.  
-Best parameters:
-```python
-{
-  'n_estimators': 200,
-  'max_depth': 10,
-  'min_samples_split': 2
-}
